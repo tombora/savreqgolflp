@@ -44,7 +44,7 @@
     <section class="features-section" id="features">
         <div class="container">
             <h2 class="section-title">SAVREQ GOLFの特長</h2>
-            <div class="features-grid">
+            <div class="features-grid basic-features">
                 <div class="feature-card">
                     <div class="feature-icon">
                         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,7 +92,11 @@
                     <h3 class="feature-title">スマホで簡単視聴</h3>
                     <p class="feature-description">撮影した動画はクラウド上に自動でアップロード<br>ご自身のスマホやPCで簡単視聴</p>
                 </div>
+            </div>
 
+            <!-- オプション -->
+            <h3 class="options-heading">オプション</h3>
+            <div class="features-grid optional-features">
                 <div class="feature-card">
                     <div class="feature-icon">
                         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -101,7 +105,7 @@
                             <circle cx="32" cy="40" r="4" stroke="currentColor" stroke-width="2"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">簡単動画購入(オプション)</h3>
+                    <h3 class="feature-title">簡単動画購入</h3>
                     <p class="feature-description">お気に入り動画はスマホから簡単に購入可能<br>決済機能連動</p>
                 </div>
 
@@ -115,9 +119,28 @@
                             <line x1="42" y1="28" x2="50" y2="28" stroke="currentColor" stroke-width="2"/>
                         </svg>
                     </div>
-                    <h3 class="feature-title">リモートレッスン機能(オプション)</h3>
+                    <h3 class="feature-title">リモートレッスン機能</h3>
                     <p class="feature-description">時間と場所にとらわれず撮影動画を使ったレッスンを実現</p>
                 </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 48 Q20 20, 32 32 T56 16" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                            <circle cx="8" cy="48" r="3" fill="currentColor"/>
+                            <circle cx="32" cy="32" r="3" fill="currentColor"/>
+                            <circle cx="56" cy="16" r="3" fill="currentColor"/>
+                            <rect x="10" y="52" width="44" height="8" stroke="currentColor" stroke-width="3" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">弾道表示ショット動画</h3>
+                    <p class="feature-description">後方からの撮影動画に弾道表示<br>より正確な弾道トレースを実現</p>
+                </div>
+            </div>
+
+            <!-- 弾道表示サンプル画像 -->
+            <div class="shot-trace-sample">
+                <img src="img/ShotTrace.jpg" alt="弾道表示サンプル">
             </div>
         </div>
     </section>
@@ -154,17 +177,6 @@
 
             <!-- 撮影エリア -->
             <div class="system-content">
-                <div class="system-description">
-                    <div class="system-item">
-                        <h3 class="system-subtitle">撮影エリア</h3>
-                        <p>ティーイングエリアにて3箇所撮影</p>
-                        <ul class="system-list">
-                            <li>プレーヤー後方</li>
-                            <li>正面</li>
-                            <li>背後等</li>
-                        </ul>
-                    </div>
-                </div>
                 <div class="system-image">
                     <a href="img/savreq_golf_image.png" target="_blank" class="image-zoom-link" title="クリックで拡大表示">
                         <img src="img/savreq_golf_image.png" alt="システム構成図">
@@ -249,14 +261,14 @@
                         <path d="M12 2L2 22h20L12 2z" stroke="currentColor" stroke-width="2" fill="none"/>
                         <path d="M12 10v4M12 18v.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                     </svg>
-                    通信環境により、当日その場での動画アップロードが困難な場合がございます。その際は翌日より動画をご視聴いただくことが可能となります
+                    現地の通信環境が著しく悪い場合、当日の動画提供はできません。その際、後日に動画をご提供できる場合もございますが、全く撮影ができないこともございます
                 </li>
                 <li class="notice-info">
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
                         <path d="M12 16v-4M12 8h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                     </svg>
-                    ご提供料金、ご提供条件等は、お客様のご予算やご要望に応じて、ご相談させて頂きます。お気軽にお問い合わせください
+                    ご提供料金、条件等はお客さまのご予算やご要望に応じて検討させていただきます。お気軽にお問い合わせください
                 </li>
             </ul>
         </div>
@@ -276,8 +288,7 @@
                     </div>
                 </div>
                 <div class="contact-cta">
-                    <a href="mailto:savreq@media-work.jp" class="cta-button large">お問い合わせフォームへ</a>
-                    <a href="mailto:savreq@media-work.jp?subject=資料請求" class="cta-button large outline">資料請求</a>
+                    <a href="https://www.media-work.jp/contact" target="_blank" class="cta-button large">お問い合わせフォームへ</a>
                 </div>
             </div>
         </div>
@@ -289,15 +300,16 @@
             <div class="footer-content">
                 <div class="footer-info">
                     <p><strong>システム提供元:</strong> 株式会社TOSYS</p>
-                    <p><a href="https://www.savreq.com/" target="_blank">https://www.savreq.com/</a></p>
                     <p class="trademark">※SAVREQ(サブレック)は株式会社TOSYSの登録商標です</p>
                 </div>
                 <div class="footer-logo">
-                    <img src="img/mw_logo.png" alt="株式会社メディア・ワーク">
+                    <a href="https://www.media-work.jp" target="_blank">
+                        <img src="img/mw_logo.png" alt="株式会社メディア・ワーク">
+                    </a>
                 </div>
             </div>
             <div class="footer-copyright">
-                <p>&copy; Media Work co.</p>
+                <p>&copy; 2025 Media Work co. All rights reserved.</p>
             </div>
         </div>
     </footer>

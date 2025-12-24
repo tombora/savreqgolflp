@@ -159,7 +159,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('img/main.jpg');
+    background-image: url('/img/main.jpg');
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -246,7 +246,7 @@ a {
 
 .features-section {
     padding: 100px 0;
-    background-image: url('img/golfballandhall.jpg');
+    background-image: url('/img/golfballandhall.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -814,7 +814,7 @@ a {
 
 .tech-section {
     padding: 100px 0;
-    background-image: url('img/image3.jpg');
+    background-image: url('/img/image3.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1052,7 +1052,7 @@ a {
 
 .contact-section {
     padding: 100px 0;
-    background-image: url('img/lens.png');
+    background-image: url('/img/lens.png');
     background-size: cover;
     background-position: center;
     color: var(--white);
